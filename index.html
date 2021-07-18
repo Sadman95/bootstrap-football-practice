@@ -13,13 +13,14 @@
 
         body{
             font-family: 'Poppins', sans-serif;
+
         }
     </style>
 </head>
 <body>
     <!---------- header  -------->
     <header style="background-color: #2D25A0;">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav id="navbar-example2" style="background-color: #2D25A0;" class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,169 +28,226 @@
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Clubs</a>
+                    <a class="nav-link" href="#scrollspyHeading2">Clubs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">World Cup 2023</a>
+                    <a class="nav-link" href="#scrollspyHeading3">World Cup 2023</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Upcoming Matches</a>
+                    <a class="nav-link" href="#scrollspyHeading4">Upcoming Matches</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#scrollspyHeading5">Contact</a>
                   </li>
                 </ul>
                 <span class="navbar-text">
-                    <a style="background-color: #E02C6D;" class="nav-link p-2" href="#"><i class="fad fa-sign-in me-2"></i>Login</a>
+                    <a style="background-color: #E02C6D;" class="nav-link p-2 d-table" href="#"><i class="fad fa-sign-in me-2"></i>Login</a>
                 </span>
               </div>
             </div>
           </nav>
-          <section class="row container mx-auto my-4">
-            <div class="col-lg-6 text-white row">
-               <div class="col-lg-8 my-4">
-                <h1 style="font-size: 64px;">Conmebol
+          <section class="row container mx-auto" id="scrollspyHeading1">
+            <div class="col-lg-6 col-md-12 col-sm-12 text-white">
+                <h1 class="mt-5 pt-5" style="font-size: 64px;">Conmebol
                   Copa America 
                   2021
                   </h1>
-                <a href="" style="background-color: #E02C6D;" class="nav-link p-2 text-white d-table">Watch Live<i class="fad fa-arrow-to-right ms-2"></i></a>
-               </div>
-              
+                <a href="" style="background-color: #E02C6D;" class="nav-link p-2 text-white d-table ">Watch Live<i class="fad fa-arrow-to-right ms-2"></i></a>
+                <!-- <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
             </div>
-            <div class="col-lg-6">
-              <img height="438px" width="536px" src="images/banner.png" alt="">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-5 pt-5">
+              <img class="img-fluid" height="438px" width="536px" src="images/banner.png" alt="">
             </div>
           </section>
-    </header>
+    </header> 
 
     <!---------- main  -------->
-    <main>
-      <section class="container mx-auto">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section id="scrollspyHeading2" class="container mx-auto">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-1.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Neymar Jr</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-2.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
+                <h5 class="card-title">Lionel Messi</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-3.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title">Cristiano Ronaldo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-4.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Paulo Dybala</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-5.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Robert Lewandowoski</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-6.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Mauro Icardi </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-7.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Di Maria</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-8.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Kylian Mbappé</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-9.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Mohamed Salah</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-10.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Harry Kane</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-11.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Kevin De Bruyne</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
-          <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="col col-lg-4 col-md-6 col-sm-12 p-2 shadow-sm">
             <div class="card h-100">
               <img src="images/players/player-12.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">Philippe Coutinho</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
               </div>
             </div>
           </div>
         </div>
+      </section> 
+
+      <section id="scrollspyHeading3" class="row container mx-auto d-flex align-items-center py-5 px-0 gy-2">
+        <div class="col-lg-6 col-md-12 col-sm-12 pe-5">
+            <h1>All Highlights 
+              Copa America 2021</h1>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              <a href="" style="background-color: #E02C6D;" class="nav-link p-2 text-white d-table">Watch Live<i class="fad fa-arrow-to-right ms-2"></i></a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-2">
+            <img src="images/match.png" class="img-fluid" alt="...">
+        </div>
+      </section>
+
+      <section id="scrollspyHeading4" class="row m-auto gy-4 bg-success">
+        <div class="col-lg-3 col-md-6 col-sm-12"><img class="img-fluid" src="images/sponsors/sponsor-1.png" alt=""></div>
+        <div class="col-lg-3 col-md-6 col-sm-12"><img class="img-fluid" src="images/sponsors/sponsor-2.png" alt=""></div>
+        <div class="col-lg-3 col-md-6 col-sm-12"><img class="img-fluid" src="images/sponsors/sponsor-3.png" alt=""></div>
+        <div class="col-lg-3 col-md-6 col-sm-12"><img class="img-fluid" src="images/sponsors/sponsor-4.png" alt=""></div>
+      </section>
+
+      <section id="scrollspyHeading5" class="row container mx-auto py-5 px-0 my-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center mb-4">
+            <img src="images/contact.png" class="img-fluid h-100 shadow" alt="...">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="d-flex mt-2">
+            <a href="" style="background-color: #E02C6D;" class="nav-link p-2 text-white me-2"><i class="fad fa-sign-in me-2"></i>Login</a>
+            <a href="" style="background-color: #E02C6D;" class="nav-link p-2 text-white">Sign Up<i class="fad fa-user-plus ms-2"></i></a>
+          </div>
+      </div>
       </section>
     </main>
 
     <!---------- footer  -------->
-    <footer>
-
+    <footer class="container row text-center my-5 mx-auto pt-5 ">
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <img src="images/Logo.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 pt-4">
+        <p>Copyright &copy; 2022 Football</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <ul class="d-flex justify-content-center align-items-center p-0">
+          <li class="list-group-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li class="list-group-item"><a href=""><i class="far fa-basketball-ball"></i></a></li>
+          <li class="list-group-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="list-group-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
     </footer>
 
 
 
 
     <!---------- bootstrap js  -------->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawesome.js"></script>
 </body>
