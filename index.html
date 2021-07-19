@@ -12,15 +12,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
         body{
+          position: relative;
             font-family: 'Poppins', sans-serif;
 
         }
     </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!---------- header  -------->
     <header style="background-color: #2D25A0;">
-        <nav id="navbar-example2" style="background-color: #2D25A0;" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav id="navbar-example" style="background-color: #2D25A0;" class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +38,7 @@
                     <a class="nav-link" href="#scrollspyHeading3">World Cup 2023</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading4">Upcoming Matches</a>
+                    <a class="nav-link" href="#scrollspyHeading4">Partners</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#scrollspyHeading5">Contact</a>
@@ -244,12 +245,18 @@
     <!---------- bootstrap js  -------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.js"></script>
     <script>
       $(document).ready(function(){
         $('[data-toggle="popover"]').popover();
       });
+
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example'
+      })
     </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/fontawesome.js"></script>
+
+
 </body>
 </html>
